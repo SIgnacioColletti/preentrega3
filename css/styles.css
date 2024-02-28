@@ -42,22 +42,65 @@ main p {
 }
 
 footer {
+  background-color: #24262b;
+  padding: 80px 0;
+}
+footer .contenedor-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .footer-links {
+  width: 25%;
+  padding: 0 15px;
+}
+footer .footer-links h4 {
+  font-size: 20px;
+  color: rgb(245, 238, 238);
+  margin-bottom: 25px;
+  font-weight: 500;
+  border-bottom: 2px solid #00c3ff;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+footer .footer-links ul li a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #bbbbbb;
+  display: block;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+footer .footer-links ul li a:hover {
+  color: rgb(255, 255, 255);
+  padding-left: 6px;
+}
+footer .social-link a {
+  display: inline-block;
+  min-width: 40px;
+  width: 40px;
+  background-color: #24262b;
+  margin: 0 20px 10px 0;
   text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: white;
+  transition: all 0.5 ease;
 }
-footer h3 {
-  margin: 2em;
+footer .social-link a:hover {
+  background-color: #00c3ff;
 }
-footer .logo-fb {
-  width: 3rem;
-}
-footer .logo-wsp {
-  width: 4rem;
-}
-footer .logo-gmail {
-  width: 2.5rem;
-}
-footer .logo-insta {
-  width: 4rem;
+@media (max-width: 991px) {
+  footer .contenedor-footer {
+    text-align: center;
+  }
+  footer .footer-links {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
 
 .comentario {
